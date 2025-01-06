@@ -125,7 +125,7 @@ def scrape_auction_data(base_url):
                                 yahoo_price if yahoo_price is not None else None, 
                                 weighted_average_price if weighted_average_price is not None else None])
                 time.sleep(1)
-                
+            
         # save workbook every 3 pages
         if page_number % 3 == 0:  
             save_items_to_excel(items_data, save_path)
